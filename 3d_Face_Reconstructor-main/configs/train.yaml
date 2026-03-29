@@ -1,0 +1,13 @@
+# configs/train.yaml
+epochs: 20
+batch_size: 4
+lr: 0.000001    # Keep this for now
+num_workers: 2
+save_every: 1
+uv_loss_weight: 0.01    # Keep this
+accum_steps: 4
+mixed_precision: false
+img_dir: "data/processed/images"
+coeff_dir: "data/processed/coeffs"
+ckpt_dir: "models/checkpoints"
+tri_uvs_path: "data/tri_uvs.json"
